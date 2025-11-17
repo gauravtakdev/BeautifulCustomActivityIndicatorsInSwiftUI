@@ -14,7 +14,7 @@ struct RotatingDots: View {
             ForEach(0..<5) { index in
                 Circle()
                     .frame(width: 16, height: 16)
-                    .foregroundStyle(.blue)
+                    .foregroundStyle(.mint)
                     .scaleEffect(rotate ? 1 : 0.5)
                     .animation(
                         .easeInOut(duration: 0.6)

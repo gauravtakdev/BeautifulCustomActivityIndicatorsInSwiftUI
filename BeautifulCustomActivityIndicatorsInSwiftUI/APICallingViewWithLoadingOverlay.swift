@@ -82,7 +82,7 @@ struct APICallingViewWithLoadingOverlay: View {
                 print("❌ No data found")
                 return
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
                 self.isLoading = false
             })
             
