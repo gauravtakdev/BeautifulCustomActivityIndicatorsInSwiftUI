@@ -11,7 +11,8 @@ import SwiftUI
 struct BeautifulCustomActivityIndicatorsInSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          //  ContentView()
+            APICallingViewWithLoadingOverlay()
         }
     }
 }

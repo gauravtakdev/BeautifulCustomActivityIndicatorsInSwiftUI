@@ -1,3 +1,11 @@
+//
+//  LoadingOverlayView.swift
+//  BeautifulCustomActivityIndicatorsInSwiftUI
+//
+//  Created by Gaurav Tak on 18/11/25.
+//
+
+
 import SwiftUI
 
 struct LoadingOverlayView: View {
@@ -13,24 +21,20 @@ struct LoadingOverlayView: View {
             // Activity indicator + message
             VStack(spacing: 12) {
                 switch loaderType {
-                case .ExpandingHexagonLoader:
-                    ExpandingHexagon()
-                case .MorphingPolygonLoader:
-                    MorphingPolygon()
-                case .RotatingSquaresLoader:
-                    RotatingSquares()
-                case .RotatingTriangleLoader:
-                    RotatingTriangle()
-                case .SpinningSquaresRingLoader:
-                    SpinningSquaresRing()
-                case .TwistingDiamondLoader:
-                    TwistingDiamond()
+                case .BarsSpinner:
+                    BarsSpinner()
+                case .OrbitSpinner:
+                    OrbitSpinner()
+                case .PulsatingCircle:
+                    PulsatingCircle()
+                case .SpinnerIndicator:
+                    SpinnerIndicator()
+                case .RippleSpinner:
+                    RippleSpinner()
+                case .RotatingDots:
+                    RotatingDots()
                 }
             }
-           // .padding(24)
-           // .background(Color.black.opacity(0.6))
-            //.cornerRadius(16)
         }
-        //.transition(.opacity.animation(.easeInOut(duration: 0.3)))
     }
 }

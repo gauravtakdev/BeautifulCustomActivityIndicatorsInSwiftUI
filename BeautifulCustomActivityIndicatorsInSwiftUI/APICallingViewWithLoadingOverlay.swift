@@ -1,45 +1,54 @@
+//
+//  APICallingViewWithLoadingOverlay.swift
+//  BeautifulCustomActivityIndicatorsInSwiftUI
+//
+//  Created by Gaurav Tak on 18/11/25.
+//
+import SwiftUI
+
 struct APICallingViewWithLoadingOverlay: View {
     @State var isLoading = false
-    @State var loaderType : LoaderType = .ExpandingHexagonLoader
+    @State var loaderType : LoaderType = .BarsSpinner
     
     var body: some View {
         ZStack {
             
             VStack(spacing: 24) {
+                Text("6 Stunning Custom Activity Indicators In SwiftUI").font(.title).multilineTextAlignment(.center).bold().foregroundColor(.white)
                 
-                Button("Show ExpandingHexagonLoader") {
-                    print("ExpandingHexagonLoader Button tapped")
-                    loaderType = .ExpandingHexagonLoader
+                Button("Show BarsSpinner") {
+                    print("BarsSpinner Button tapped")
+                    loaderType = .BarsSpinner
                     fetchPosts()
                 }.buttonStyle(.borderedProminent)
                 
-                Button("Show MorphingPolygonLoader") {
-                    print("MorphingPolygonLoader Button tapped")
-                    loaderType = .MorphingPolygonLoader
+                Button("Show OrbitSpinner") {
+                    print("OrbitSpinner Button tapped")
+                    loaderType = .OrbitSpinner
                     fetchPosts()
                 }.buttonStyle(.bordered)
                 
-                Button("Show RotatingSquaresLoader") {
-                    print("RotatingSquaresLoader Button tapped")
-                    loaderType = .RotatingSquaresLoader
+                Button("Show PulsatingCircle") {
+                    print("PulsatingCircle Button tapped")
+                    loaderType = .PulsatingCircle
                     fetchPosts()
                 }.buttonStyle(.borderedProminent)
                 
-                Button("Show RotatingTriangleLoader") {
-                    print("RotatingTriangleLoader Button tapped")
-                    loaderType = .RotatingTriangleLoader
+                Button("Show RippleSpinner") {
+                    print("RippleSpinner Button tapped")
+                    loaderType = .RippleSpinner
                     fetchPosts()
                 }.buttonStyle(.bordered)
                 
-                Button("Show SpinningSquaresRingLoader") {
-                    print("SpinningSquaresRingLoader Button tapped")
-                    loaderType = .SpinningSquaresRingLoader
+                Button("Show RotatingDots") {
+                    print("RotatingDots Button tapped")
+                    loaderType = .RotatingDots
                     fetchPosts()
                 }.buttonStyle(.borderedProminent)
                 
-                Button("Show TwistingDiamondLoader") {
-                    print("TwistingDiamondLoader Button tapped")
-                    loaderType = .TwistingDiamondLoader
+                Button("Show SpinnerIndicator") {
+                    print("SpinnerIndicator Button tapped")
+                    loaderType = .SpinnerIndicator
                     fetchPosts()
                 }.buttonStyle(.bordered)
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
