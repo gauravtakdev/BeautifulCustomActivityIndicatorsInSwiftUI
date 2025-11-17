@@ -4,7 +4,7 @@
 //
 //  Created by Gaurav Tak on 18/11/25.
 //
-
+import SwiftUI
 
 struct RotatingDots: View {
     @State private var rotate = false
