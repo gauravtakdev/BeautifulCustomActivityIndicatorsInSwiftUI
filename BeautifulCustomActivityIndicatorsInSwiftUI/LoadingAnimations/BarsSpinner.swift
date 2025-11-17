@@ -11,7 +11,6 @@ import SwiftUI
 struct BarsSpinner: View {
     @State private var animate = false
     var scale: CGFloat = 2.0
-    
     var body: some View {
         ZStack {
             ForEach(0..<12) { i in
