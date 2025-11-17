@@ -19,7 +19,15 @@ Each spinner is implemented using **SwiftUI shapes, stroke animations, transform
 ---
 
 ## 📸 Preview (GIF or Screenshots)
-> *(Add your animation GIFs or screenshots here.)*
+
+
+https://github.com/user-attachments/assets/fd10b528-af28-4b74-84a2-1d21fcbf2779
+
+
+
+
+https://github.com/user-attachments/assets/778fbef6-2bc8-4f89-aca8-4c7beed1f932
+
 
 ---
 
